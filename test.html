@@ -1,0 +1,45 @@
+@{
+    ViewBag.Title = "Index";
+}
+<html>
+<head>
+
+    <script type="text/javascript" src="~/jquery-3.2.1.js"></script>
+    @*<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>*@
+
+    <script type="text/javascript" src="~/JavaScript1.js"></script>
+</head>
+<form>
+    productname: <input type="text" id="Product" name="productname"><br>
+    productsource: <input type="text" id="ProductSource" name="productsource"><br>
+    Quantity: <input type="text" id="Quantity" name="Quantity"><br>
+    <input type="button" value="Submit" onclick="AddItem();">
+    <input type="button" value="Create" onclick="InsertItem();">
+</form>
+
+
+<table id="tblAddLineItem">
+    <thead>
+        <tr>
+            <th>Serial Number</th>
+            <th>Failure Reason</th>
+            <th>DistributorOrderNumber</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<table id="tblProductItem">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Product Source</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+            <th>Add More</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+
+</table>
+</html>
